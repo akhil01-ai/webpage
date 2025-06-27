@@ -3,111 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Your "Web Development for Dummies" E-Book</title>
+    <title>Get Your Ebook - Web Dev Dummies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 90%;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 2em;
-        }
-        p {
-            margin-bottom: 25px;
-            font-size: 1.1em;
-        }
-        form {
-            text-align: left;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #555;
-        }
-        input[type="text"],
-        input[type="email"],
-        select {
-            width: calc(100% - 20px);
-            padding: 12px 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-            box-sizing: border-box; /* Ensures padding doesn't add to total width */
-        }
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        .btn {
-            display: block;
-            width: 100%;
-            background-color: #28a745;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            border: none;
-            cursor: pointer;
-            margin-top: 30px;
-        }
-        .btn:hover {
-            background-color: #218838;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Almost There! Just a Few Details Away from Your E-Book!</h1>
-        <p>We just need a little information to send you your free copy of **'Web Development for Dummies'**.</p>
+<body class="bg-gradient-to-br from-green-100 to-lime-200 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-lg w-full transform transition-transform duration-300 hover:scale-105">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center">
+            Just One Step Away!
+        </h1>
+        <p class="text-lg text-gray-700 mb-8 text-center">
+            Please provide a few details to get your free copy of <span class="font-semibold text-green-600">"Web Development for Dummies"</span>.
+            This helps us improve our resources!
+        </p>
 
-        <form action="thank_you.html" method="get">
-            <div class="form-group">
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        <form action="thankyou.html" method="GET" class="space-y-6">
+            <div>
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Full Name:</label>
+                <input type="text" id="name" name="name" required
+                       class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all duration-200"
+                       placeholder="John Doe">
             </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email Address:</label>
+                <input type="email" id="email" name="email" required
+                       class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all duration-200"
+                       placeholder="john.doe@example.com">
             </div>
-            <div class="form-group">
-                <label for="experience">What's your current experience level with web development?</label>
-                <select id="experience" name="experience">
-                    <option value="absolute_beginner">Absolute Beginner</option>
-                    <option value="some_basic">Some Basic Knowledge</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-                </select>
+
+            <div>
+                <label for="occupation" class="block text-gray-700 text-sm font-bold mb-2">Your Occupation (Optional):</label>
+                <input type="text" id="occupation" name="occupation"
+                       class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all duration-200"
+                       placeholder="Student, Developer, etc.">
             </div>
-            <div class="form-group">
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter" style="display: inline-block;">Yes, I'd like to receive occasional updates and tips on web development.</label>
+
+            <div class="text-center pt-4">
+                <button type="submit"
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg
+                               transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-300">
+                    Get My Download Now!
+                </button>
             </div>
-            <button type="submit" href=thankyou.html class="btn">Download My E-Book Now!</button>
         </form>
     </div>
 </body>

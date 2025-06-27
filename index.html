@@ -1,110 +1,40 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development for Dummies - Your Easy Guide to Coding!</title>
+    <title>Web Development for Dummies - Free Ebook</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            width: 90%;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #34495e;
-            margin-bottom: 25px;
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 30px;
-            text-align: left;
-            display: inline-block; /* To center the ul itself */
-        }
-        ul li {
-            background-color: #e9ecef;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            font-size: 1em;
-        }
-        ul li::before {
-            content: '✓';
-            color: #28a745;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .testimonial {
-            margin-top: 30px;
-            font-style: italic;
-            color: #555;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Demystify Web Development: Your Ultimate Guide for Beginners!</h1>
-        <h2>Ever wanted to build your own website but felt overwhelmed? **'Web Development for Dummies'** is your clear, concise, and comprehensive resource to get started today!</h2>
-        <p>Dive into the exciting world of web development without the jargon and complexity. This essential guide breaks down core concepts, from HTML basics to understanding how websites work, making it perfect for absolute beginners. Learn at your own pace and unlock the power to create!</p>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-200 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-2xl w-full text-center transform hover:scale-105 transition-transform duration-300">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 leading-tight">
+            Unlock Your Web Development Potential!
+        </h1>
+        <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            Ready to dive into the exciting world of web development but don't know where to start? Our
+            <span class="font-semibold text-blue-600">"Web Development for Dummies"</span> resource is your perfect
+            first step. This comprehensive, beginner-friendly guide simplifies complex concepts, making web design and
+            coding accessible to everyone.
+        </p>
+        <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+            Learn HTML, CSS, and essential web principles with clear explanations, practical examples, and easy-to-follow steps.
+            Say goodbye to confusion and hello to coding confidence!
+        </p>
 
-        <a href="details.html" class="btn">Get Your Free E-Book Now!</a>
-
-        <ul>
-            <li>Learn HTML, CSS, and basic JavaScript principles.</li>
-            <li>Understand how websites are structured.</li>
-            <li>Build your first web page in no time.</li>
-            <li>Perfect for absolute beginners, no prior coding experience needed!</li>
-        </ul>
-
-        <div class="testimonial">
-            "Finally, a guide that makes sense! I'm already building my first page." - A Happy Beginner
-        </div>
+        <!-- Download Button linking to the details page -->
+        <a href="details.html"
+           class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-lg
+                  transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
+            Get Your Free Ebook Now!
+        </a>
     </div>
 </body>
 </html>

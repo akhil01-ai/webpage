@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your "Web Development for Dummies" E-Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        p {
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+        form {
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: calc(100% - 20px);
+            padding: 12px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box; /* Ensures padding doesn't add to total width */
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Almost There! Just a Few Details Away from Your E-Book!</h1>
+        <p>We just need a little information to send you your free copy of **'Web Development for Dummies'**.</p>
+
+        <form action="thank_you.html" method="get">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">What's your current experience level with web development?</label>
+                <select id="experience" name="experience">
+                    <option value="absolute_beginner">Absolute Beginner</option>
+                    <option value="some_basic">Some Basic Knowledge</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter" style="display: inline-block;">Yes, I'd like to receive occasional updates and tips on web development.</label>
+            </div>
+            <button type="submit" class="btn">Download My E-Book Now!</button>
+        </form>
+    </div>
+</body>
+</html>
